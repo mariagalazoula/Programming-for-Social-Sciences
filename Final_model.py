@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov  8 10:54:07 2018
-
-@author: gy16mg
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Mon Oct 29 11:51:47 2018
 
 @author: gy16mg
