@@ -1,4 +1,4 @@
-### GEOGM Programming for Social Sciences: Core Skills
+### GEOGM Programming for Social Sciences: Core Skills - Assignment 1 
 
 This is the repository for the first assignment in GEOGM Programming for Social Sciences: Core Skills, as part of the Integrated MSc and PhD in Data Analytics and Society that I am currently enrolled in. It consists of the code of the final agent-based model that was created during the practicals of this module. 
 
