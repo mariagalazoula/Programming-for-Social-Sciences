@@ -5,15 +5,22 @@ Created on Mon Oct 29 11:51:47 2018
 @author: gy16mg
 """
 
-##PRACTICAL COMMUNICATION
-#DATA INPUT
-#import pandas as pd
-import matplotlib
 
-#change the working directory
+"""Import all the modules that will be required for our model.
+   
+   These modules are: matplotlib, csv, Agent_Framework, matplotlib.animation
+"""
+import matplotlib
+import csv
+import Agent_Framework as agfr
+import matplotlib.animation
 
 ##READING THE DATA FOR THE ENVIRONMENT
-import csv
+"""
+In this part we will read the data from the in.txt file 
+in order to plot the environment.
+
+"""
 
 f = open('in.txt', newline='')
 
@@ -41,8 +48,7 @@ matplotlib.pyplot.show()
 ##CREATE AGENTS FROM AGENT_FRAMEWORK
 
 #we import the file that we have created the agent class inside        
-import Agent_Framework as agfr
-import matplotlib.animation
+
 
 num_of_agents = 10
 num_of_iterations = 100
@@ -54,25 +60,25 @@ for i in range(num_of_agents):
     agents.append(agfr.Agent(environment, agents, neighbourhood))
 
 #move the agents through the framework (each agent for the number of iterations)
-for j in range(num_of_iterations):
-    for i in range(num_of_agents):
-        agents[i].move()
+#for j in range(num_of_iterations):
+#    for i in range(num_of_agents):
+#        agents[i].move()
 
 #set the limits of the plot
 matplotlib.pyplot.ylim(300, 0)
 matplotlib.pyplot.xlim(0, 300)
 #plot each agent through a loop
-for i in range(num_of_agents):
-    matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
+#for i in range(num_of_agents):
+#    matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
 #show the plot
-matplotlib.pyplot.show()
+#matplotlib.pyplot.show()
      
 #make the agents move and eat through the file agent framework
-for j in range(num_of_iterations):
-    for i in range(num_of_agents):
-        agents[i].move()
-        agents[i].eat()
-        agents[i].share_with_neighbours(neighbourhood)
+#for j in range(num_of_iterations):
+#    for i in range(num_of_agents):
+#        agents[i].move()
+#        agents[i].eat()
+#        agents[i].share_with_neighbours(neighbourhood)
 
 #see how much store each of the agents has        
           
@@ -106,8 +112,11 @@ def update(frame_number):
     matplotlib.pyplot.imshow(environment)
     global carry_on
     
-    for i in range(num_of_agents):
-        agents[i].move()
+    for j in range(num_of_iterations):
+        for i in range(num_of_agents):
+            agents[i].move()
+            agents[i].eat()
+            agents[i].share_with_neighbours(neighbourhood)
         
     for i in range(num_of_agents):
         matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
