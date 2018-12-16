@@ -106,6 +106,7 @@ class Agent:
         self -- agent
         agent -- the other agent that is required for calculating of the distance and to share with our agent the store.   
         The condition is whether the two agents are in the same neighbourhood. 
+        neighbourhood -- the distance that we define for two agents to be considered close to each other and can share their store.
         
         Returns:
         The new store of the two agents.
