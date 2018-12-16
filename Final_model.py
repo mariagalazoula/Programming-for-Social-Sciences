@@ -71,9 +71,7 @@ fig = matplotlib.pyplot.figure(figsize=(7, 7))
 ax = fig.add_axes([0, 0, 1, 1])
 
 
-#ax.set_autoscale_on(False)
-
-# Make the agents.
+# In this part we will make the agents move, eat and share their store with their neighbours.
 
 carry_on = True
 
