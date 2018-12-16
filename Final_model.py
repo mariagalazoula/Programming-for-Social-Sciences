@@ -55,6 +55,9 @@ num_of_iterations = 100
 agents= []
 neighbourhood= 20
 
+#create a list of agents using the agent framework that we created
+for i in range(num_of_agents):
+   agents.append(agfr.Agent(environment, agents, neighbourhood))
 
 #set the limits of the plot
 matplotlib.pyplot.ylim(300, 0)
