@@ -46,9 +46,7 @@ matplotlib.pyplot.imshow(environment)
 matplotlib.pyplot.show()
 
 ##CREATE AGENTS FROM AGENT_FRAMEWORK
-
-#we import the file that we have created the agent class inside        
-
+    
 
 num_of_agents = 10
 num_of_iterations = 100
