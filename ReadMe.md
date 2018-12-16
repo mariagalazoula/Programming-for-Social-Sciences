@@ -13,5 +13,5 @@ In this assignment we are required to create an agent-based model. We create 10 
 * The agents can "eat" from the environment and this value is in their store afterwards. 
 * The distance between two agents can also be calculated so that the agents will be aware of whether other agents are in their neighbourhood. 
 * In the class **Agent_Framework.py** the agents are assigned all of their attributes and several functions are defined, such as the functions `move`, `eat`, `dist`, `share_with_neighbours`. 
-* In the **Final_model.py**, the final code of the model can be found. 
-* Finally, a gif file of the animation can be found in the repository, along with a picture of the environment when the data from the txt file was initially read. 
+* Finally, in the **Final_model.py**, the final code of the model can be found that comes from the practicals from the module. 
+
