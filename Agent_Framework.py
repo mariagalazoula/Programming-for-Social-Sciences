@@ -81,9 +81,7 @@ class Agent:
         if self.environment[self.y][self.x] > 10:
             self.environment[self.y][self.x] -= 10
             self.store +=10
-        else:
-            self.store = self.environment[self.y][self.x]  
-            self.environment[self.y][self.x] -= 10
+       
                        
 #function to calculate the distance of two agents using the Pythagorean Theoreum     
     def dist(self, agent):
