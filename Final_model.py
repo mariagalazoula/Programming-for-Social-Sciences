@@ -55,42 +55,11 @@ num_of_iterations = 100
 agents= []
 neighbourhood= 20
 
-#create a list of agents using the agent framework that we created
-for i in range(num_of_agents):
-    agents.append(agfr.Agent(environment, agents, neighbourhood))
-
-#move the agents through the framework (each agent for the number of iterations)
-#for j in range(num_of_iterations):
-#    for i in range(num_of_agents):
-#        agents[i].move()
 
 #set the limits of the plot
 matplotlib.pyplot.ylim(300, 0)
 matplotlib.pyplot.xlim(0, 300)
-#plot each agent through a loop
-#for i in range(num_of_agents):
-#    matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
-#show the plot
-#matplotlib.pyplot.show()
-     
-#make the agents move and eat through the file agent framework
-#for j in range(num_of_iterations):
-#    for i in range(num_of_agents):
-#        agents[i].move()
-#        agents[i].eat()
-#        agents[i].share_with_neighbours(neighbourhood)
-
-#see how much store each of the agents has        
-          
-#for j in range(num_of_iterations):
-#   for i in range(num_of_agents):
-#       agents[i].move()  
-#       agents[i].eat()
-#for i in range(num_of_agents):
-#    matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
-#show the plot
-matplotlib.pyplot.imshow(environment)
-matplotlib.pyplot.show()       
+    
 
 #BASIC ANIMATION
 #import operator
